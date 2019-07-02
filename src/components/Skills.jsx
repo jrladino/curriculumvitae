@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import H2Styled from '../styled/H2Styled';
 
 const SkillsContainer = styled.div`
     display: grid;
@@ -53,6 +54,7 @@ const SkillsSpan = styled.span`
 
 const Skills = props => (
     <div className="Skills">
+        <H2Styled name="Skills" />
         <SkillsContainer>
             {props.data.map((skill, index) => (
                 <div className="Skills-item" key={`Skills - ${index}`}>
